@@ -17,7 +17,7 @@ rm frames/*
 
 FOO=1;
 for x in images /; do
-    ln -s ../$x $(printf " frames/%06d . jpg " $FOO) ;
+    ln -s ../$x $(printf " frames/%06d.jpg " $FOO) ;
     FOO=$(expr $FOO + 1) ;
 done
 
